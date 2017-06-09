@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export GH_TOKEN="1ba8294166d3f091265a99631007ad35de40d0f4"
+export GH_TOKEN="05dd4682cccdeedb5f3e972abbeb560143e02f35"
 
 if [ -z "$GH_TOKEN" ]; then
     echo "You must set the GH_TOKEN environment variable."
