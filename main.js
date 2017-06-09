@@ -64,7 +64,7 @@ function createDefaultWindow() {
   win.on('closed', () => {
     win = null;
   });
-  win.loadURL('file://${__dirname}/version.html#v${app.getVersion()}');
+  win.loadURL("file://${__dirname}/version.html#v${app.getVersion()}");
   return win;
 }
 autoUpdater.on('checking-for-update', () => {
@@ -77,7 +77,7 @@ autoUpdater.on('update-not-available', (ev, info) => {
   sendStatusToWindow('Update not available.');
 })
 autoUpdater.on('error', (ev, err) => {
-  sendStatusToWindow('Error in auto-updater.' + err);
+  sendStatusToWindow('Error in auto-updater.');
 })
 autoUpdater.on('download-progress', (progressObj) => {
   let log_message = "Download speed: " + progressObj.bytesPerSecond;
