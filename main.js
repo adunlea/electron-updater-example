@@ -17,6 +17,8 @@ autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 log.info('App starting...');
 
+console.log(autoUpdater.getFeedURL());
+
 //-------------------------------------------------------------------
 // Define the menu
 //
@@ -127,7 +129,7 @@ autoUpdater.on('update-downloaded', (ev, info) => {
   setTimeout(function() {
     autoUpdater.quitAndInstall();  
   }, 5000)
-})
+});
 
 app.on('ready', function()  {
   autoUpdater.checkForUpdates();
