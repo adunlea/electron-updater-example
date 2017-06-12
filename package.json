@@ -1,9 +1,13 @@
 {
   "name": "electron-updater-example",
-  "version": "0.5.5",
+  "version": "0.5.7",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": "Teradata Corporation",
+  "scripts": {
+    "start": "electron .",
+    "release": "build"
+  },
   "devDependencies": {
     "electron": "^1.4.15",
     "electron-builder": "^12.3.1"
@@ -24,9 +28,7 @@
     },
     "nsis": {
       "perMachine": true
-    },
-    "scripts": {
-      "release": "build"
     }
+
   }
 }
