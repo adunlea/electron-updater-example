@@ -17,7 +17,8 @@ autoUpdater.logger = log;
 autoUpdater.logger.transports.file.level = 'info';
 log.info('App starting...');
 
-console.log(autoUpdater.getFeedURL());
+log.info('Load URL: ' + autoUpdater.loadURL);
+log.info('Feed URL: ' + autoUpdater.getFeedURL());
 
 //-------------------------------------------------------------------
 // Define the menu
